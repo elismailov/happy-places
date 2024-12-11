@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HappyPlaces" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#4b86b4</item>
+        <item name="colorPrimaryDark">#2a4d69</item>
+        <item name="colorAccent">#adcbe3</item>
+    </style>
+
+<!--    <style name="CustomNoActionBarTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="android:statusBarColor">@color/colorPrimaryDark</item>-->
+<!--    </style>-->
+
+    <style name="CustomToolbarStyle">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorControlNormal">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.HappyPlaces" parent="Base.Theme.HappyPlaces" />
+</resources>
