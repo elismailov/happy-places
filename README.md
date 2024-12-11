@@ -1,3 +1,12 @@
+# Setup Instructions
+
+After cloning the repository, follow these steps to set up your project:
+
+1. **Create a `gradle.properties` File**:
+   Copy the provided `gradle.properties.template` to a new file named `gradle.properties`:
+   ```bash
+   cp gradle.properties.template gradle.properties
+
 # Screenshots
 
 <p align="center">
