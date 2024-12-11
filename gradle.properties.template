@@ -1,0 +1,6 @@
+# Enable AndroidX
+android.useAndroidX=true
+android.enableJetifier=true
+
+# Placeholder for API key
+MAPS_API_KEY=your_api_key_here
