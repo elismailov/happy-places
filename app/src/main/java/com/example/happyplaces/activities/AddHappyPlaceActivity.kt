@@ -49,6 +49,9 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 import java.util.UUID
+import android.graphics.Rect
+import android.view.MotionEvent
+import android.view.inputmethod.InputMethodManager
 
 class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -115,6 +118,26 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
         binding?.btnSave?.setOnClickListener(this)
         binding?.etLocation?.setOnClickListener(this)
         binding?.tvSelectCurrentLocation?.setOnClickListener(this)
+    }
+
+    private fun hideKeyboard(view: View) {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
+    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
+        if (event.action == MotionEvent.ACTION_DOWN) {
+            val focusedView = currentFocus
+            if (focusedView != null && focusedView is View) {
+                val outRect = Rect()
+                focusedView.getGlobalVisibleRect(outRect)
+                if (!outRect.contains(event.rawX.toInt(), event.rawY.toInt())) {
+                    focusedView.clearFocus()
+                    hideKeyboard(focusedView)
+                }
+            }
+        }
+        return super.dispatchTouchEvent(event)
     }
 
     private fun isLocationEnabled(): Boolean {

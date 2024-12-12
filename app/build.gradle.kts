@@ -20,7 +20,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        buildConfigField("String", "API_KEY", "${project.findProperty("MY_API_KEY")}")
+        buildConfigField("String", "API_KEY", "\"${project.findProperty("MY_API_KEY")}\"")
+        manifestPlaceholders["google_maps_api_key"] = project.findProperty("MY_API_KEY") ?: "default_api_key"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
