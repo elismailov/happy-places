@@ -1,3 +1,7 @@
+# Overview
+
+This app is designed using XML layouts and integrates Google Maps and Google Places APIs for location services. It supports swipe gestures for editing and deleting items, utilizes the device’s current location, incorporates calendar functionality, includes editable text input fields, and stores data locally using SQLite.
+
 # Setup Instructions
 
 ### 1. Getting Started
