@@ -46,12 +46,14 @@ To check or enable these APIs:
   &nbsp;
   <img src="screenshots/calendar.png" alt="calendar" style="width: 30%;">
 <br><br>
+  <img src="screenshots/placesSearch.png" alt="places search" style="width: 30%;">
+  &nbsp;
   <img src="screenshots/selectPhoto.png" alt="select photo" style="width: 30%;">
   &nbsp;
   <img src="screenshots/placeDetail.png" alt="place detail" style="width: 30%;">
-  &nbsp;
-  <img src="screenshots/editPlace.png" alt="edit place" style="width: 30%;">
 <br><br>
+  <img src="screenshots/editPlace.png" alt="edit place" style="width: 30%;">
+  &nbsp;
   <img src="screenshots/deletePlace.png" alt="delete place" style="width: 30%;">
   &nbsp;
   <img src="screenshots/viewPlace.png" alt="view place" style="width: 30%;">
